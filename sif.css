@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100vw;
+  height: 100%;
+
+}
+
+/* === HEADER === */
+
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-cover {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.header-wrapper {
+  background: url('picture/layout/header-cover.jpg') no-repeat 0% center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header-text-wrapper {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  line-height: 3rem;
+  height: 3rem;
+  width: 75%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,.2);
+  color: #eee;
+}
+
+
+/* === NAVIGATION === */
+
+nav {
+  position: absolute;
+  top: 100px;
+  width: 100vw;
+  background-color: rgba(0, 110, 255, 0.57);
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: #eee;
+  text-shadow: 0px 0px 3px rgba(0,0,0,.6);
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #eee;
+  color: rgba(0, 110, 255, 0.57);
+  text-shadow: none;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="sif.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <div class="header-cover">
+      <div class="header-wrapper">
+        <div class=" header-text-wrapper">
+          <h1>Solti Ifjúsági Fúvószenekar</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="nav">
+    <a href="sif.html">Kezdőlap</a>
+    <a href="event.html">Események</a>
+    <a href="story.html">Rólunk</a>
+    <a href="band.html">Tagok</a>
+    <a href="sif.html">Média</a>
+    <a href="contact.html">Kapcsolat</a>
+    <div class="time">
+      <div id="clock">
+      <script>
+      function colorClock() {
+
+  var date = new Date();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+  
+  if (hours < 10) {
+    hours = '0' + hours;
+  }
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) {
+    seconds = '0' + seconds;
+  }
+ var clockFace = hours + ':' + minutes + ':' + seconds;
+ document.getElementById('clock').innerHTML = clockFace;
+
+  
+  setTimeout (function() {
+    colorClock();
+  }, 1000);
+}
+
+colorClock();
+    </script>
+      </div>
+    </div>
+    
+  </nav>
+  
+  <main class="main band">
+    <h2 class="band-header">Zenekari tagok</h2>
+    <article class="article">
+      <h2>Fuvola, oboa</h2>
+      <ul>
+        <li>Kun Anasztázia</li>
+        <li>Kaszt Ágnes</li>
+        <li>Selmeczi Anna</li>
+        <li>Balla Zsófia</li>
+        <li>Kovács Dorina</li>
+        <li>Tóth Enikő</li>
+        <li>Cs. Farkas Katalin, oboa, pedagógus</li>
+      </ul>
+    </article>
+    
+    <article class="article">
+      <h2>Klarinét</h2>
+      <ul>
+        <li>Móricz Zsuzsanna</li>
+        <li>Gallina Zsolt, pedagógus</li>
+        <li>Németh Gréta</li>
+        <li>Papp Dóra</li>
+        <li>Tóth Krisztina</li>
+        <li>Budai Bettina</li>
+        <li>Görgényi Gabriella</li>
+        <li>Szuromi Mária</li>
+        <li>Domján Boglárka</li>
+        <li>Ujvári Lili</li>
+        <li>Boldizsár Anna</li>
+        <li>Berta Bella</li>
+        <li></li>
+      </ul>
+    </article>
+    
+     <article class="article">
+      <h2>Alt-szaxofon</h2>
+      <ul>
+        <li>Budai Bianka</li>
+        <li>Kovács Tamás</li>
+        <li>Csepecz Dorka</li>
+        <li>Szuromi Gréta</li>
+        <li>Jónás Rebeka</li>
+      </ul>
+    </article>
+    
+     <article class="article">
+      <h2>Szárnykürt, trombita</h2>
+      <ul>
+        <li>Patyi Gábor</li>
+        <li>Szuromi Miklós</li>
+        <li>Tamás Ádám</li>
+        <li>Papp Ádám</li>
+        <li>Jankovics Gábor</li>
+        <li>Stingl ...</li>
+        <li>Dudás Sándor</li>
+      </ul>
+    </article>
+    
+    <article class="article">
+      <h2>Kürt</h2>
+      <ul>
+        <li>Tóth Karolina</li>
+        <li>Simon Márk</li>
+        <li>Stingl ...</li>
+        <li></li>
+      </ul>
+    </article>
+    
+    <article class="article">
+      <h2>Tenorkürt</h2>
+      <ul>
+        <li>Móricz Levente</li>
+        <li>Laki Lajos Bence</li>
+        <li>Szűcs Bence</li>
+      </ul>
+    </article>
+    
+    <article class="article">
+      <h2>Harsona</h2>
+      <ul>
+        <li>Selmeczi Tamás</li>
+        <li>Nagy Máté, pedagógus</li>
+        <li>Fuchs Attila, pedagógus</li>
+      </ul>
+    </article>
+   
+    <article class="article">
+      <h2>Tuba</h2>
+      <ul>
+        <li>Szűcs Bendegúz</li>
+      </ul>
+    </article>
+    
+    <article class="article">
+      <h2>Ütőhangszerek</h2>
+      <ul>
+        <li>Kákonyi Árpád, pedagógus</li>
+        <li>Selmeczi Dávid</li>
+      </ul>
+    </article>
+    
+    <div class="up-button"><a href="#">Ugrás a tetejére</a></div>
+   </main>
+  
+   <footer>
+    <div class="footer-cover">
+      <div class="footer-wrapper">
+        <p class="footer-text-wrapper"><i class="fa fa-copyright"></i> Solti Ifjúsági Fúvószenekar
+        </p>
+        <p class=" footer-text-wrapper">Készítette: <a href="" alt="" target="_blank">Nagy Máté</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
